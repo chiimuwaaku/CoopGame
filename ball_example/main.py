@@ -9,14 +9,19 @@ from libs import ball as ba
 from libs import agent as ag
 
 pygame.init()
-WINDOWWIDTH = 640 *2
-WINDOWHEIGHT = 480 *2
+pygame.mixer.init()
+sound_base_path = '/Users/joseph/work/CoopGame/ball_example'
+pygame.mixer.music.load(sound_base_path + '/sounds/Symbiose.mp3')
+pygame.mixer.music.play(-1)
+
+WINDOWWIDTH = 640 * 2
+WINDOWHEIGHT = 480 * 2
 
 DISPLAYSURF = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
 pygame.display.set_caption('Ball survival !')
 
 # frames per second setting
-FPS = 30
+FPS = 50
 fpsClock = pygame.time.Clock()
 
 # set up the colors
