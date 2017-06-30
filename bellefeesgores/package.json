@@ -1,0 +1,10 @@
+{
+  "name": "chiimuwaaku",
+  "version": "1.0.0",
+  "description": " first chiimuwaaku project ",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  }
+}
